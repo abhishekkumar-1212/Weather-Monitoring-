@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px; /* Adjusted max-width */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 10px auto; /* Center card */
+    border-radius: 6px;
+    padding: 16px; /* Increased padding */
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 12px 20px; /* Adjusted padding */
+    height: 65px; /* Increased height by 15px */
+    border-radius: 15px;
+    flex: 1;
+    margin: 0 10px; /* Reduced margins */
+    font-size: 18px; /* Adjusted font size */
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 55px; /* Increased button width by 15px */
+    height: 55px; /* Increased button height by 15px */
+    cursor: pointer;
+}
+
+.search button img {
+    width: 35px; /* Increased icon size by 15px */
+}
+
+.weather-icon {
+    width: 95px; /* Increased weather icon size by 15px */
+    margin-top: 20px; /* Reduced top margin */
+}
+
+.weather h1 {
+    font-size: 65px; /* Increased font size by 15px */
+    font-weight: 560;
+}
+
+.weather h2 {
+    font-size: 39px; /* Increased font size by 15px */
+    font-weight: 500;
+    margin-top: -10px; /* Reduced top margin */
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Reduced padding */
+    margin-top: 20px; /* Reduced top margin */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 45px; /* Increased image size by 15px */
+    margin-right: 10px; /* Reduced right margin */
+}
+
+.humidity, .wind {
+    font-size: 39px; /* Increased font size by 15px */
+    margin-top: 0; /* Reset top margin */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%; /* Allow card to be larger on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .search input {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .weather h1 {
+        font-size: 55px; /* Increased font size by 15px */
+    }
+
+    .weather h2 {
+        font-size: 35px; /* Increased font size by 15px */
+    }
+
+    .humidity, .wind {
+        font-size: 35px; /* Increased font size by 15px */
+    }
+}
+
+@media (max-width: 480px) {
+    .search input {
+        height: 55px; /* Adjust height for very small screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .search button {
+        width: 50px; /* Adjust button size */
+        height: 50px; /* Adjust button size */
+    }
+
+    .weather h1 {
+        font-size: 45px; /* Increased font size by 15px */
+    }
+
+    .weather h2 {
+        font-size: 30px; /* Increased font size by 15px */
+    }
+}
